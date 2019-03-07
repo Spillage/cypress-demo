@@ -1,0 +1,73 @@
+      
+{
+    "type":"PAYMENT",
+    "beneficiary":{
+        "entityType":"COMPANY",
+        "address":{
+            "streetAddress":"14141 Harvard Square"
+        },
+        "companyName":"US FX Agency",
+        "paymentAmount":1000,
+        "paymentDate":"2018-03-01",
+        "feePaidBy":"PAYER",
+        "paymentMethod":"LOCAL",
+        "reason":"Real_estate",
+        "sourceCurrency":"AUD",
+        "reference":"Local Payment US/USD",
+        "payer":{
+            "entityType":"COMPANY",
+            "address":{
+                "streetAddress":"15 William St"
+            },
+            "companyName":"AU FX",
+            "additionalInfo":{
+                "businessRegistrationNumber":"123456789",
+                "personalEmail":"testing+ad@airwallex.com"
+            }
+        },
+        "shortReferenceId":"P180227-A0OMD9V",
+        "status":"NEW",
+        "feeAmount":3.85,
+        "feeCurrency":"AUD",
+        "paymentId":"0c77ba5b-6f20-48bf-90c3-603a3d62a986",
+        "selectorlist":[
+            {
+                "method":"contains",
+                "action":"click",
+                "howtoget":"Log in",
+                "should":[
+                    "url",
+                    "include",
+                    "/app/login"
+                ]
+            },
+            {
+                "method":"get",
+                "action":"type",
+                "howtoget":"input[name=email]",
+                "value":"testing+ad@airwallex.com"
+            },
+            {
+                "method":"get",
+                "action":"type",
+                "howtoget":"input[name=password]",
+                "value":"Abcde1234"
+            },
+            {
+                "method":"get",
+                "action":"click",
+                "howtoget":"button[type=submit]",
+                "should":[
+                    "url",
+                    "include",
+                    "/app/dashboard"
+                ]
+            },
+            {
+                "method":"get",
+                "action":"click",
+                "howtoget":"a[title=Payments]"
+            }
+        ]
+    }
+}

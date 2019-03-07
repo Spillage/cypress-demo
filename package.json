@@ -1,0 +1,23 @@
+{
+  "name": "airwallex-test",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "author": "pgxlxianjian@163.com",
+  "private": true,
+  "scripts": {
+    "cypress": "cypress run",
+    "cypress-gui": "cypress open"
+  },
+  "dependencies": {
+    "cypress": "^3.1.5"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

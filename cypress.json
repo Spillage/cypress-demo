@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://staging.airwallex.com/en-AU/",
+    "integrationFolder": "cypress/integration",
+    "testFiles": "*.js",
+    "video":false,
+    "defaultCommandTimeout": 10000
+}
